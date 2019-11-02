@@ -6,7 +6,7 @@
 /*   By: kchen2 <kchen2@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 15:20:26 by kchen2            #+#    #+#             */
-/*   Updated: 2019/10/31 16:54:49 by kchen2           ###   ########.fr       */
+/*   Updated: 2019/11/01 19:11:18 by kchen2           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,4 +90,5 @@ void	init_mdf(uint8_t *s, size_t len)
 	mdf_padding(s, len, &mdf);
 	mdf_trans(&mdf);
 	mdf_prin(&mdf);
+	ft_memdel((void **)&(mdf.msg));
 }

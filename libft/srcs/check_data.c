@@ -6,7 +6,7 @@
 /*   By: kchen2 <kchen2@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/16 21:43:35 by kchen2            #+#    #+#             */
-/*   Updated: 2019/10/09 00:43:31 by kchen2           ###   ########.fr       */
+/*   Updated: 2019/11/01 19:47:25 by kchen2           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ void	str_pad(va_list list, int *store)
 	}
 	if (s == NULL)
 	{
-		s = ft_strdup("(null)");
+		s = "(null)";
 		if (store[PERC] && 6 > store[PercNUM])
 			store[num] -= store[PercNUM];
 		else
