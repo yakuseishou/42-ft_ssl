@@ -6,7 +6,7 @@
 /*   By: kchen2 <kchen2@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 22:15:44 by kchen2            #+#    #+#             */
-/*   Updated: 2019/11/01 19:47:02 by kchen2           ###   ########.fr       */
+/*   Updated: 2019/11/01 19:52:15 by kchen2           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,14 +82,7 @@ void	prin_num_value(long long a, int *store, int base, int l)
 {
 	char	*s;
 	
-	if (a != 0)
-	{
-		s = itoa_base(a, base, store[datahexcap]);
-		ft_putstr(s);
-		free(s);
-		store[arlen] += l;
-	}
-	else if (!store[PERC])
+	if (a != 0 || !store[PERC])
 	{
 		s = itoa_base(a, base, store[datahexcap]);
 		ft_putstr(s);
